@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+    width: 100%;
+    height: 127vh;
+    background-color: #d8c7ff;
+    overflow-x: hidden;
+    font-family: 'Libre Baskerville', serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(244, 250, 255);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#c5acff, #ffa4e5);
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#b292ff, #ff83dc);
+}
+
+.container {
+    width: 700px;
+    height: 127vh;
+    background-color: rgb(252, 229, 255);
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center {
+    text-align: center;
+}
+
+label {
+    display: inline;
+    /* top right bottom left */
+    margin: 10px 0px 0px 5px;
+}
+
+fieldset {
+    margin: 10px 20px;
+}
+
+span {
+    font-size: 12px;
+}
+
+input[type="submit"] {
+    margin-left: 20px;
+    width: 660px;
+    height: 25px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+textarea {
+    display: block;
+    margin-top: 10px;
+}
+
+.required:after {
+    content: "* ";
+    color: red;
+}
+
+/* Make the input next to the label and create space for each question */
+.each-question {
+    display: block;
+    margin: 15px 10px;
+}
+
+.options {
+    display: block;
+}
+
+input, textarea, select {
+    border: 1px solid black;
+}

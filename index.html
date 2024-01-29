@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title" class="center">Survey Form</h1>
+        <p id="description" class="center">Please fill out the following questions.</p>
+        <form id="survey-form" method="post" action="" class="container">
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <div class="each-question">
+                    <label for="first-name" class="required">First Name: </label> 
+                    <input id="first-name" type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="each-question">
+                    <label for="last-name" class="required">Last Name: </label>  
+                    <input id="last-name" type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="each-question">
+                    <label for="email" class="required">Email: </label>
+                    <input id="email" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="each-question">
+                    <label for="age">Age <span>(Optional)</span>: </label>
+                    <input id="age" type="number" min="13" max="120" placeholder="Age">
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions:</legend>
+                <div class="each-question">
+                    <label for="role" class="required">Current Role: </label>
+                    <select id="role" required>
+                        <option value="">Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="part-time">Part-Time Job</option>
+                        <option value="full-time">Full-Time Job</option>
+                        <option value="others">Others</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+                
+
+                <div class="each-question">
+                    <label class="options">Which of the following programming languages do you know?</label>
+                    <!-- Checkboxes -->
+                    <label class="options"><input id="option1" type="checkbox" value="python" name="programming-language">Python</label>
+                    <label class="options"><input id="option2" type="checkbox" value="java" name="programming-language">Java</label>
+                    <label class="options"><input id="option3" type="checkbox" value="html-css" name="programming-language">HTML/CSS</label>
+                    <label class="options"><input id="option4" type="checkbox" value="javascript" name="programming-language">JavaScript</label>
+                    <label class="options"><input id="option5" type="checkbox" value="c" name="programming-language">C</label>
+                    <label class="options"><input id="option6" type="checkbox" value="c#" name="programming-language">C#</label>
+                    <label class="options"><input id="option7" type="checkbox" value="c++" name="programming-language">C++</label>
+                    <label class="options"><input id="option8" type="checkbox" value="lua" name="programming-language">Lua</label>
+                    <label class="options"><input id="option9" type="checkbox" value="rust" name="programming-language">Rust</label>
+                </div>
+
+                <div class="each-question">
+                    <label class="options required">Would you recommend Python to a friend? </label>
+                    <label class="options"><input type="radio" name="recommend-to-friend" checked>Yes</label>
+                    <label class="options"><input type="radio" name="recommend-to-friend">No</label>
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Others:</legend>
+                <div class="each-question">
+                    <label for="comments-or-questions">Any comments or questions?</label>
+                    <textarea id="comments-or-questions" name="comments-or-questions" rows="5" cols="50" placeholder="Any comments or questions?"></textarea>
+                </div>
+                
+            </fieldset>
+
+            <input type="submit" value="Submit" onclick="submitButton()">
+
+        </form>
+
+    </body>
+
+</html>
