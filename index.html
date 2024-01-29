@@ -10,7 +10,7 @@
     <body>
         <h1 id="title" class="center">Survey Form</h1>
         <p id="description" class="center">Please fill out the following questions.</p>
-        <form id="survey-form" method="post" action="" class="container">
+        <form id="survey-form" method="post" action="" class="container" onsubmit="return submitButton();">
             <fieldset>
                 <legend>Personal Information:</legend>
                 <div class="each-question">
@@ -78,7 +78,7 @@
                 
             </fieldset>
 
-            <input type="submit" value="Submit" onclick="submitButton()">
+            <input type="submit" value="Submit">
 
         </form>
 
